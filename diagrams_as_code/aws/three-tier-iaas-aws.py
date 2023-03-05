@@ -8,15 +8,17 @@ from diagrams.aws.network import ALB
 from diagrams.aws.network import ClientVpn
 
 
-with Diagram("Three tier web application", show=False):
+web_app_name = "Three tier web application"
+with Diagram(web_app_name, show=False):
     with Cluster("VPC"):
+        VPC_Global = VPC("VPC")
         ALBFI = ALB("ALB (Facing internet)")
         with Cluster ("Private Subnet"):
-            with Cluster ("ASG Web Tier"):
-                EC2_Web_Tier = EC2("Web Tier")
             ALBFP = ALB("ALB (Facing Private)")
+            with Cluster ("Auto Scaling Group"):
+                EC2_Web_Tier = [EC2("Web Tier"), EC2("Web Tier"), EC2("Web Tier")]
             with Cluster ("ASG App Tier"):
-                EC2_App_Tier = EC2("App Tier")
+                EC2_App_Tier = [EC2("App Tier"), EC2("App Tier"), EC2("App Tier")]
             with Cluster("Database Tier"):
                 DB = Aurora("Amazon Aurora")
-            
+    ALBFI >> EC2_Web_Tier >> ALBFP >> EC2_App_Tier >> DB
