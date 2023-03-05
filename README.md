@@ -1,2 +1,2 @@
 # cloudconsultant
-Cloud consultant degree's project 
+Degree's project: Cloud consultant 
