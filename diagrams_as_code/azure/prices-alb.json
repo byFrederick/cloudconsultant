@@ -1,0 +1,487 @@
+{
+    "FormatVersion":"aws_v1",
+    "PriceList":[
+       {
+          "product":{
+             "productFamily":"Load Balancer-Application",
+             "attributes":{
+                "regionCode":"us-east-1",
+                "servicecode":"AWSELB",
+                "groupDescription":"LoadBalancer hourly usage by Application Load Balancer",
+                "usagetype":"LoadBalancerUsage",
+                "locationType":"AWS Region",
+                "location":"US East (N. Virginia)",
+                "servicename":"Elastic Load Balancing",
+                "operation":"LoadBalancing:Application",
+                "group":"ELB:Balancing"
+             },
+             "sku":"37CUWUT8GSNQEPUV"
+          },
+          "serviceCode":"AWSELB",
+          "terms":{
+             "OnDemand":{
+                "37CUWUT8GSNQEPUV.JRTCKXETXF":{
+                   "priceDimensions":{
+                      "37CUWUT8GSNQEPUV.JRTCKXETXF.6YS6EN2CT7":{
+                         "unit":"Hrs",
+                         "endRange":"Inf",
+                         "description":"$0.0225 per Application LoadBalancer-hour (or partial hour)",
+                         "appliesTo":[
+                            
+                         ],
+                         "rateCode":"37CUWUT8GSNQEPUV.JRTCKXETXF.6YS6EN2CT7",
+                         "beginRange":"0",
+                         "pricePerUnit":{
+                            "USD":"0.0225000000"
+                         }
+                      }
+                   },
+                   "sku":"37CUWUT8GSNQEPUV",
+                   "effectiveDate":"2022-12-01T00:00:00Z",
+                   "offerTermCode":"JRTCKXETXF",
+                   "termAttributes":{
+                      
+                   }
+                }
+             }
+          },
+          "version":"20230123152844",
+          "publicationDate":"2023-01-23T15:28:44Z"
+       },
+       {
+          "product":{
+             "productFamily":"Load Balancer-Gateway",
+             "attributes":{
+                "regionCode":"us-east-1",
+                "servicecode":"AWSELB",
+                "groupDescription":"LoadBalancer hourly usage by Gateway Load Balancer",
+                "usagetype":"LoadBalancerUsage",
+                "locationType":"AWS Region",
+                "location":"US East (N. Virginia)",
+                "servicename":"Elastic Load Balancing",
+                "operation":"LoadBalancing:Gateway",
+                "group":"ELB:Balancing"
+             },
+             "sku":"4XCKHVEY2F7FVHE3"
+          },
+          "serviceCode":"AWSELB",
+          "terms":{
+             "OnDemand":{
+                "4XCKHVEY2F7FVHE3.JRTCKXETXF":{
+                   "priceDimensions":{
+                      "4XCKHVEY2F7FVHE3.JRTCKXETXF.6YS6EN2CT7":{
+                         "unit":"Hrs",
+                         "endRange":"Inf",
+                         "description":"$0.0125 per Gateway LoadBalancer-hour (or partial hour) US East (N. Virginia)",
+                         "appliesTo":[
+                            
+                         ],
+                         "rateCode":"4XCKHVEY2F7FVHE3.JRTCKXETXF.6YS6EN2CT7",
+                         "beginRange":"0",
+                         "pricePerUnit":{
+                            "USD":"0.0125000000"
+                         }
+                      }
+                   },
+                   "sku":"4XCKHVEY2F7FVHE3",
+                   "effectiveDate":"2022-12-01T00:00:00Z",
+                   "offerTermCode":"JRTCKXETXF",
+                   "termAttributes":{
+                      
+                   }
+                }
+             }
+          },
+          "version":"20230123152844",
+          "publicationDate":"2023-01-23T15:28:44Z"
+       },
+       {
+          "product":{
+             "productFamily":"Load Balancer",
+             "attributes":{
+                "regionCode":"us-east-1",
+                "servicecode":"AWSELB",
+                "groupDescription":"LoadBalancer hourly usage by Classic Load Balancer",
+                "usagetype":"LoadBalancerUsage",
+                "locationType":"AWS Region",
+                "location":"US East (N. Virginia)",
+                "servicename":"Elastic Load Balancing",
+                "operation":"LoadBalancing",
+                "group":"ELB:Balancing"
+             },
+             "sku":"6XT9C7FFNQ3T39YK"
+          },
+          "serviceCode":"AWSELB",
+          "terms":{
+             "OnDemand":{
+                "6XT9C7FFNQ3T39YK.JRTCKXETXF":{
+                   "priceDimensions":{
+                      "6XT9C7FFNQ3T39YK.JRTCKXETXF.6YS6EN2CT7":{
+                         "unit":"Hrs",
+                         "endRange":"Inf",
+                         "description":"$0.025 per LoadBalancer-hour (or partial hour)",
+                         "appliesTo":[
+                            
+                         ],
+                         "rateCode":"6XT9C7FFNQ3T39YK.JRTCKXETXF.6YS6EN2CT7",
+                         "beginRange":"0",
+                         "pricePerUnit":{
+                            "USD":"0.0250000000"
+                         }
+                      }
+                   },
+                   "sku":"6XT9C7FFNQ3T39YK",
+                   "effectiveDate":"2022-12-01T00:00:00Z",
+                   "offerTermCode":"JRTCKXETXF",
+                   "termAttributes":{
+                      
+                   }
+                }
+             }
+          },
+          "version":"20230123152844",
+          "publicationDate":"2023-01-23T15:28:44Z"
+       },
+       {
+          "product":{
+             "productFamily":"Load Balancer-Gateway",
+             "attributes":{
+                "regionCode":"us-east-1",
+                "servicecode":"AWSELB",
+                "groupDescription":"Used Gateway Load Balancer capacity units-hr",
+                "usagetype":"LCUUsage",
+                "locationType":"AWS Region",
+                "location":"US East (N. Virginia)",
+                "servicename":"Elastic Load Balancing",
+                "operation":"LoadBalancing:Gateway",
+                "group":"ELB:Balancing"
+             },
+             "sku":"EBFBY6XVZMVA2MJP"
+          },
+          "serviceCode":"AWSELB",
+          "terms":{
+             "OnDemand":{
+                "EBFBY6XVZMVA2MJP.JRTCKXETXF":{
+                   "priceDimensions":{
+                      "EBFBY6XVZMVA2MJP.JRTCKXETXF.6YS6EN2CT7":{
+                         "unit":"LCU-Hrs",
+                         "endRange":"Inf",
+                         "description":"$0.0040 per used Gateway load balancer capacity unit-hour (or partial hour) in US East (N. Virginia)",
+                         "appliesTo":[
+                            
+                         ],
+                         "rateCode":"EBFBY6XVZMVA2MJP.JRTCKXETXF.6YS6EN2CT7",
+                         "beginRange":"0",
+                         "pricePerUnit":{
+                            "USD":"0.0040000000"
+                         }
+                      }
+                   },
+                   "sku":"EBFBY6XVZMVA2MJP",
+                   "effectiveDate":"2022-12-01T00:00:00Z",
+                   "offerTermCode":"JRTCKXETXF",
+                   "termAttributes":{
+                      
+                   }
+                }
+             }
+          },
+          "version":"20230123152844",
+          "publicationDate":"2023-01-23T15:28:44Z"
+       },
+       {
+          "product":{
+             "productFamily":"Load Balancer",
+             "attributes":{
+                "regionCode":"us-east-1",
+                "servicecode":"AWSELB",
+                "groupDescription":"Data processed by Classic Load Balancer",
+                "usagetype":"DataProcessing-Bytes",
+                "locationType":"AWS Region",
+                "location":"US East (N. Virginia)",
+                "servicename":"Elastic Load Balancing",
+                "operation":"LoadBalancing",
+                "group":"ELB:Balancing"
+             },
+             "sku":"NZE73RYFQ8ZCZ553"
+          },
+          "serviceCode":"AWSELB",
+          "terms":{
+             "OnDemand":{
+                "NZE73RYFQ8ZCZ553.JRTCKXETXF":{
+                   "priceDimensions":{
+                      "NZE73RYFQ8ZCZ553.JRTCKXETXF.6YS6EN2CT7":{
+                         "unit":"GB",
+                         "endRange":"Inf",
+                         "description":"$0.008 per GB Data Processed by the LoadBalancer",
+                         "appliesTo":[
+                            
+                         ],
+                         "rateCode":"NZE73RYFQ8ZCZ553.JRTCKXETXF.6YS6EN2CT7",
+                         "beginRange":"0",
+                         "pricePerUnit":{
+                            "USD":"0.0080000000"
+                         }
+                      }
+                   },
+                   "sku":"NZE73RYFQ8ZCZ553",
+                   "effectiveDate":"2022-12-01T00:00:00Z",
+                   "offerTermCode":"JRTCKXETXF",
+                   "termAttributes":{
+                      
+                   }
+                }
+             }
+          },
+          "version":"20230123152844",
+          "publicationDate":"2023-01-23T15:28:44Z"
+       },
+       {
+          "product":{
+             "productFamily":"Load Balancer-Application",
+             "attributes":{
+                "regionCode":"us-east-1",
+                "servicecode":"AWSELB",
+                "groupDescription":"Used Application Load Balancer capacity units-hr",
+                "usagetype":"LCUUsage",
+                "locationType":"AWS Region",
+                "location":"US East (N. Virginia)",
+                "servicename":"Elastic Load Balancing",
+                "operation":"LoadBalancing:Application",
+                "group":"ELB:Balancing"
+             },
+             "sku":"P2XGEJ8N3KU52WA8"
+          },
+          "serviceCode":"AWSELB",
+          "terms":{
+             "OnDemand":{
+                "P2XGEJ8N3KU52WA8.JRTCKXETXF":{
+                   "priceDimensions":{
+                      "P2XGEJ8N3KU52WA8.JRTCKXETXF.6YS6EN2CT7":{
+                         "unit":"LCU-Hrs",
+                         "endRange":"Inf",
+                         "description":"$0.008 per used Application load balancer capacity unit-hour (or partial hour)",
+                         "appliesTo":[
+                            
+                         ],
+                         "rateCode":"P2XGEJ8N3KU52WA8.JRTCKXETXF.6YS6EN2CT7",
+                         "beginRange":"0",
+                         "pricePerUnit":{
+                            "USD":"0.0080000000"
+                         }
+                      }
+                   },
+                   "sku":"P2XGEJ8N3KU52WA8",
+                   "effectiveDate":"2022-12-01T00:00:00Z",
+                   "offerTermCode":"JRTCKXETXF",
+                   "termAttributes":{
+                      
+                   }
+                }
+             }
+          },
+          "version":"20230123152844",
+          "publicationDate":"2023-01-23T15:28:44Z"
+       },
+       {
+          "product":{
+             "productFamily":"Load Balancer-Application",
+             "attributes":{
+                "regionCode":"us-east-1",
+                "servicecode":"AWSELB",
+                "groupDescription":"Used Application Load Balancer capacity On Outposts units-hr",
+                "usagetype":"Outposts-LCUUsage",
+                "locationType":"AWS Outposts",
+                "location":"US East (N. Virginia)",
+                "servicename":"Elastic Load Balancing",
+                "operation":"LoadBalancing:Application",
+                "group":"ELB:Balancing"
+             },
+             "sku":"P8UHXAWNGFFB3K8T"
+          },
+          "serviceCode":"AWSELB",
+          "terms":{
+             "OnDemand":{
+                "P8UHXAWNGFFB3K8T.JRTCKXETXF":{
+                   "priceDimensions":{
+                      "P8UHXAWNGFFB3K8T.JRTCKXETXF.6YS6EN2CT7":{
+                         "unit":"LCU-Hrs",
+                         "endRange":"Inf",
+                         "description":"$0.0 per LCU-Hrs for Outposts-LCUUsage:LoadBalancing:Application in US East (N. Virginia)",
+                         "appliesTo":[
+                            
+                         ],
+                         "rateCode":"P8UHXAWNGFFB3K8T.JRTCKXETXF.6YS6EN2CT7",
+                         "beginRange":"0",
+                         "pricePerUnit":{
+                            "USD":"0.0000000000"
+                         }
+                      }
+                   },
+                   "sku":"P8UHXAWNGFFB3K8T",
+                   "effectiveDate":"2022-12-01T00:00:00Z",
+                   "offerTermCode":"JRTCKXETXF",
+                   "termAttributes":{
+                      
+                   }
+                }
+             }
+          },
+          "version":"20230123152844",
+          "publicationDate":"2023-01-23T15:28:44Z"
+       },
+       {
+          "product":{
+             "productFamily":"Load Balancer-Network",
+             "attributes":{
+                "regionCode":"us-east-1",
+                "servicecode":"AWSELB",
+                "groupDescription":"Used Network Load Balancer capacity units-hr",
+                "usagetype":"LCUUsage",
+                "locationType":"AWS Region",
+                "location":"US East (N. Virginia)",
+                "servicename":"Elastic Load Balancing",
+                "operation":"LoadBalancing:Network",
+                "group":"ELB:Balancing"
+             },
+             "sku":"XZ2DR556MD28P9WJ"
+          },
+          "serviceCode":"AWSELB",
+          "terms":{
+             "OnDemand":{
+                "XZ2DR556MD28P9WJ.JRTCKXETXF":{
+                   "priceDimensions":{
+                      "XZ2DR556MD28P9WJ.JRTCKXETXF.6YS6EN2CT7":{
+                         "unit":"LCU-Hrs",
+                         "endRange":"Inf",
+                         "description":"$0.006 per used Network load balancer capacity unit-hour (or partial hour)",
+                         "appliesTo":[
+                            
+                         ],
+                         "rateCode":"XZ2DR556MD28P9WJ.JRTCKXETXF.6YS6EN2CT7",
+                         "beginRange":"0",
+                         "pricePerUnit":{
+                            "USD":"0.0060000000"
+                         }
+                      }
+                   },
+                   "sku":"XZ2DR556MD28P9WJ",
+                   "effectiveDate":"2022-12-01T00:00:00Z",
+                   "offerTermCode":"JRTCKXETXF",
+                   "termAttributes":{
+                      
+                   }
+                }
+             }
+          },
+          "version":"20230123152844",
+          "publicationDate":"2023-01-23T15:28:44Z"
+       },
+       {
+          "product":{
+             "productFamily":"Load Balancer-Application",
+             "attributes":{
+                "regionCode":"us-east-1",
+                "servicecode":"AWSELB",
+                "groupDescription":"LoadBalancer hourly usage by Application Load Balancer on Outposts",
+                "usagetype":"Outposts-LoadBalancerUsage",
+                "locationType":"AWS Outposts",
+                "location":"US East (N. Virginia)",
+                "servicename":"Elastic Load Balancing",
+                "operation":"LoadBalancing:Application",
+                "group":"ELB:Balancing"
+             },
+             "sku":"Y57U68FTH7H6FZ2H"
+          },
+          "serviceCode":"AWSELB",
+          "terms":{
+             "OnDemand":{
+                "Y57U68FTH7H6FZ2H.JRTCKXETXF":{
+                   "priceDimensions":{
+                      "Y57U68FTH7H6FZ2H.JRTCKXETXF.6YS6EN2CT7":{
+                         "unit":"Hrs",
+                         "endRange":"Inf",
+                         "description":"$0.0225 per Hrs for Outposts-LoadBalancerUsage:LoadBalancing:Application in US East (N. Virginia)",
+                         "appliesTo":[
+                            
+                         ],
+                         "rateCode":"Y57U68FTH7H6FZ2H.JRTCKXETXF.6YS6EN2CT7",
+                         "beginRange":"0",
+                         "pricePerUnit":{
+                            "USD":"0.0225000000"
+                         }
+                      }
+                   },
+                   "sku":"Y57U68FTH7H6FZ2H",
+                   "effectiveDate":"2022-12-01T00:00:00Z",
+                   "offerTermCode":"JRTCKXETXF",
+                   "termAttributes":{
+                      
+                   }
+                }
+             }
+          },
+          "version":"20230123152844",
+          "publicationDate":"2023-01-23T15:28:44Z"
+       },
+       {
+          "product":{
+             "productFamily":"Load Balancer-Network",
+             "attributes":{
+                "regionCode":"us-east-1",
+                "servicecode":"AWSELB",
+                "groupDescription":"LoadBalancer hourly usage by Network Load Balancer",
+                "usagetype":"LoadBalancerUsage",
+                "locationType":"AWS Region",
+                "location":"US East (N. Virginia)",
+                "servicename":"Elastic Load Balancing",
+                "operation":"LoadBalancing:Network",
+                "group":"ELB:Balancing"
+             },
+             "sku":"YKBGGP5EBGDU9T5W"
+          },
+          "serviceCode":"AWSELB",
+          "terms":{
+             "OnDemand":{
+                "YKBGGP5EBGDU9T5W.JRTCKXETXF":{
+                   "priceDimensions":{
+                      "YKBGGP5EBGDU9T5W.JRTCKXETXF.6YS6EN2CT7":{
+                         "unit":"Hrs",
+                         "endRange":"Inf",
+                         "description":"$0.0225 per Network LoadBalancer-hour (or partial hour)",
+                         "appliesTo":[
+                            
+                         ],
+                         "rateCode":"YKBGGP5EBGDU9T5W.JRTCKXETXF.6YS6EN2CT7",
+                         "beginRange":"0",
+                         "pricePerUnit":{
+                            "USD":"0.0225000000"
+                         }
+                      }
+                   },
+                   "sku":"YKBGGP5EBGDU9T5W",
+                   "effectiveDate":"2022-12-01T00:00:00Z",
+                   "offerTermCode":"JRTCKXETXF",
+                   "termAttributes":{
+                      
+                   }
+                }
+             }
+          },
+          "version":"20230123152844",
+          "publicationDate":"2023-01-23T15:28:44Z"
+       }
+    ],
+    "ResponseMetadata":{
+       "RequestId":"8b4f85e6-518b-43a4-8527-4c982af19cc2",
+       "HTTPStatusCode":200,
+       "HTTPHeaders":{
+          "date":"Tue, 07 Mar 2023 02:24:04 GMT",
+          "content-type":"application/x-amz-json-1.1",
+          "content-length":"10902",
+          "connection":"keep-alive",
+          "x-amzn-requestid":"8b4f85e6-518b-43a4-8527-4c982af19cc2"
+       },
+       "RetryAttempts":0
+    }
+ }

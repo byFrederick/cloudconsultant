@@ -1,0 +1,75 @@
+[
+    {
+       "product":{
+          "productFamily":"Compute Instance",
+          "attributes":{
+             "enhancedNetworkingSupported":"No",
+             "intelTurboAvailable":"Yes",
+             "memory":"1 GiB",
+             "vcpu":"1",
+             "classicnetworkingsupport":"false",
+             "capacitystatus":"Used",
+             "locationType":"AWS Region",
+             "storage":"EBS only",
+             "instanceFamily":"General purpose",
+             "operatingSystem":"Linux",
+             "abdInstanceClass":"t",
+             "intelAvx2Available":"No",
+             "regionCode":"us-east-1",
+             "physicalProcessor":"Intel Xeon Family",
+             "clockSpeed":"Up to 3.3 GHz",
+             "ecu":"Variable",
+             "networkPerformance":"Low to Moderate",
+             "servicename":"Amazon Elastic Compute Cloud",
+             "gpuMemory":"NA",
+             "vpcnetworkingsupport":"true",
+             "instanceType":"t2.micro",
+             "tenancy":"Shared",
+             "usagetype":"BoxUsage:t2.micro",
+             "normalizationSizeFactor":"0.5",
+             "intelAvxAvailable":"Yes",
+             "processorFeatures":"Intel AVX; Intel Turbo",
+             "servicecode":"AmazonEC2",
+             "licenseModel":"No License required",
+             "currentGeneration":"Yes",
+             "preInstalledSw":"NA",
+             "location":"US East (N. Virginia)",
+             "processorArchitecture":"32-bit or 64-bit",
+             "marketoption":"OnDemand",
+             "operation":"RunInstances",
+             "availabilityzone":"NA"
+          },
+          "sku":"HZC9FAP4F9Y8JW67"
+       },
+       "serviceCode":"AmazonEC2",
+       "terms":{
+          "OnDemand":{
+             "HZC9FAP4F9Y8JW67.JRTCKXETXF":{
+                "priceDimensions":{
+                   "HZC9FAP4F9Y8JW67.JRTCKXETXF.6YS6EN2CT7":{
+                      "unit":"Hrs",
+                      "endRange":"Inf",
+                      "description":"$0.0116 per On Demand Linux t2.micro Instance Hour",
+                      "appliesTo":[
+                         
+                      ],
+                      "rateCode":"HZC9FAP4F9Y8JW67.JRTCKXETXF.6YS6EN2CT7",
+                      "beginRange":"0",
+                      "pricePerUnit":{
+                         "USD":"0.0116000000"
+                      }
+                   }
+                },
+                "sku":"HZC9FAP4F9Y8JW67",
+                "effectiveDate":"2023-02-01T00:00:00Z",
+                "offerTermCode":"JRTCKXETXF",
+                "termAttributes":{
+                   
+                }
+             }
+          }
+       },
+       "version":"20230228202612",
+       "publicationDate":"2023-02-28T20:26:12Z"
+    }
+ ]
