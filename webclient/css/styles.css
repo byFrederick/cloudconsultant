@@ -1,0 +1,38 @@
+body{
+    font-family: 'Montserrat, sans-serif';  
+    /* height:100vh; */
+
+}
+
+h1 {  
+
+    /* height: 10rem;
+    top: 20rem; */
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 50rem;
+    font-size: 5.5rem;
+    line-height: 10rem;
+    
+    color: #FFFFFF;
+}
+
+p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-top: 3rem;
+    color: #FFFFFF;
+}
+
+.p-bt{
+    font-family: 'Open Sans';
+    font-style: normal;
+    margin-top: 3rem;
+}
+
+#title{
+    background-color: #2F2F2F;
+}
