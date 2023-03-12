@@ -1,14 +1,19 @@
-const http = require('http');
+const { spawn } = require('child_process');
 
-const hostname = '127.0.0.1';
-const port = 3000;
+function getEc2MonthlyPrice(region, instanceType) {
+  const pythonScript = spawn('python.exe', ['.\\API_request\\AWS\\get-ec2-monthly-price.py', region, instanceType]);
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World');
-});
+  pythonScript.stdout.on('data', (data) => {
+    console.log(data.toString());
+  });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+  pythonScript.stderr.on('data', (data) => {
+    console.error(data.toString());
+  });
+
+  pythonScript.on('close', (code) => {
+    console.log(`child process exited with code ${code}`);
+  });
+}
+
+getEc2MonthlyPrice('us-east-1', 't2.micro');

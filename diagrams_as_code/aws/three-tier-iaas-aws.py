@@ -1,11 +1,11 @@
 from diagrams import Diagram, Cluster
 from diagrams.aws.network import VPC
 from diagrams.aws.network import PublicSubnet
-from diagrams.aws.network import PrivateSubnet
-from diagrams.aws.compute import EC2
+from diagrams.aws.network import PrivateSubnet           
+from diagrams.aws.compute import EC2               
 from diagrams.aws.database import Aurora
 from diagrams.aws.network import ALB 
-from diagrams.aws.network import ClientVpn
+from diagrams.aws.network import ClientVpn          
 
 
 web_app_name = "Three tier web application"

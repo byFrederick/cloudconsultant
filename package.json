@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/byFrederick/cloudconsultant/issues"
   },
-  "homepage": "https://github.com/byFrederick/cloudconsultant#readme"
+  "homepage": "https://github.com/byFrederick/cloudconsultant#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1333.0"
+  }
 }
