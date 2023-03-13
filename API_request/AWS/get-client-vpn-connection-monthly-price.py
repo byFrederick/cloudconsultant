@@ -20,8 +20,7 @@ def get_vpn_monthly_price(region, connections, hoursPerDay, workingDays):
     )
 
     
-    with open('prices-vpn.json', 'w') as outfile:
-        json.dump(response, outfile)
+
     product = response['PriceList'][0]
     vpn_product = json.loads(product)
 

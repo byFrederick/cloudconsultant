@@ -3,16 +3,16 @@ from diagrams.azure.network import VirtualNetworks
 from diagrams.azure.network import Subnets
 from diagrams.azure.compute import VM
 from diagrams.azure.database import SQLDatabases
-from diagrams.azure.network import LoadBalancers 
+from diagrams.azure.network import ApplicationGateway 
 from diagrams.azure.network import VirtualNetworkGateways
 
 
 web_app_name = "Three tier web application"
 with Diagram(web_app_name, show=False):
     with Cluster("Virtual Network"):
-        ALBFI = LoadBalancers("ALB (Facing internet)")
+        ALBFI = ApplicationGateway("ALB (Facing internet)")
         with Cluster ("Private Subnet"):
-            ALBFP = LoadBalancers("ALB (Facing Private)")
+            ALBFP = ApplicationGateway("ALB (Facing Private)")
             with Cluster ("AutoScale Web Tier"):
                 VM_Web_Tier = [VM("Web"), VM("Web"), VM("Web")]
             with Cluster ("AutoScale App Tier"):
