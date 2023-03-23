@@ -6,17 +6,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const cloudProvider = form.querySelector("input[name='cloud_provider']:checked").value;
     const budget = form.querySelector("#budget").value;
-    const workload = form.querySelector("input[name='workload']:checked").value;
-    const architecture = form.querySelector("input[name='architecture']:checked").value;
-    const autoScaling = form.querySelector("input[name='auto_scaling']:checked").value;
+     const workload = form.querySelector("#workload").value;
+    const architecture = form.querySelector("#architecture").value;
+    const autoScaling = form.querySelector("input[name='scale']:checked").value;
     const publicAccess = form.querySelector("input[name='public_access']:checked").value;
     const vpnAccess = form.querySelector("input[name='vpn_access']:checked").value;
-    const containerBased = form.querySelector("input[name='container_based']:checked").value;
-    const managedDatabase = form.querySelector("input[name='managed_database']:checked").value;
-    const languageFramework = form.querySelector("#language_framework").value;
-    const buildTools = form.querySelector("#build_tools").value;
-    const environmentConfig = form.querySelector("input[name='environment_config']:checked").value;
-    const environmentConfigDetails = form.querySelector("#environment_config_details textarea").value;
+
+    // const containerBased = form.querySelector("#container_based").value;
+    // const managedDatabase = form.querySelector("#managed_database").value;
+    // const languageFramework = form.querySelector("#language_framework").value;
+    // buildTools = form.querySelector("#build_tools").value;
+    // const environmentConfig = form.querySelector("input[name='environment_config']:checked").value;
+    // const environmentConfigDetails = form.querySelector("#environment_config_details textarea").value;
 
     const result = {
       cloudProvider,
@@ -26,23 +27,33 @@ document.addEventListener("DOMContentLoaded", function () {
       autoScaling,
       publicAccess,
       vpnAccess,
-      containerBased,
-      managedDatabase,
-      languageFramework,
-      buildTools,
-      environmentConfig,
-      environmentConfigDetails,
+
+      // containerBased,
+      // managedDatabase,
+      // languageFramework,
+      // buildTools,
+      // environmentConfig,
+      // environmentConfigDetails,
     };
 
     console.log(result);
   });
 
-  form.querySelector("input[name='environment_config']").addEventListener("change", function () {
-    const environmentConfigDetailsSection = document.getElementById("environment_config_details");
-    if (this.value === "yes") {
-      environmentConfigDetailsSection.style.display = "block";
-    } else {
-      environmentConfigDetailsSection.style.display = "none";
-    }
-  });
-});
+//   form.querySelector("#environment_config_yes").addEventListener("change", function () {
+//     const environmentConfigDetailsSection = document.getElementById("environment_config_details");
+//     if (this.checked) {
+//       environmentConfigDetailsSection.style.display = "block";
+//     } else {
+//       environmentConfigDetailsSection.style.display = "none";
+//     }
+//   });
+
+//   form.querySelector("#environment_config_no").addEventListener("change", function () {
+//     const environmentConfigDetailsSection = document.getElementById("environment_config_details");
+//     if (this.checked) {
+//       environmentConfigDetailsSection.style.display = "none";
+//     } else {
+//       environmentConfigDetailsSection.style.display = "block";
+//     }
+//   });
+ });

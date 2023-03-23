@@ -38,16 +38,22 @@
           <div class="card questionnaire">
             <div class="card-body">
 
-              <h5 class="card-title question">Q. Whats your favorite cloud provider?</h5>
+              <h5 class="card-title question">Q1. Whats your favorite cloud provider?</h5>
               <form id="questionnaire-form">
                 <div class="mb-3">
-                  <input type="radio" class="btn-check" name="options" id="option1" data-value="small_business" autocomplete="off">
+                  <input type="radio" class="btn-check" name="cloud_provider" id="option1" data-value="small_business" autocomplete="off">
                   <label class="btn btn-outline-light w-100 option" for="option1">Azure</label>
-                  <input type="radio" class="btn-check" name="options" id="option2" data-value="nonprofit" autocomplete="off">
+                </div>
+                <div class="mb-3">
+                  <input type="radio" class="btn-check" name="cloud_provider" id="option2" data-value="nonprofit" autocomplete="off">
                   <label class="btn btn-outline-light w-100 option" for="option2">AWS</label>
-                  <input type="radio" class="btn-check" name="options" id="option3" data-value="journalist" autocomplete="off">
+                </div>
+                <div class="mb-3">
+                  <input type="radio" class="btn-check" name="cloud_provider" id="option3" data-value="journalist" autocomplete="off">
                   <label class="btn btn-outline-light w-100 option" for="option3">GCP</label>
-                  <input type="radio" class="btn-check" name="options" id="option4" data-value="other" autocomplete="off">
+                </div>
+                <div class="mb-3">
+                  <input type="radio" class="btn-check" name="cloud_provider" id="option4" data-value="other" autocomplete="off">
                   <label class="btn btn-outline-light w-100 option" for="option4">No</label>
                 </div>
 
@@ -80,7 +86,7 @@
                 <h5 class="card-title question">Q5. Do you require auto-scaling for your application?</h5>
                 <div class="mb-3">
                   <input type="radio" class="btn-check" name="scale" id="scale_yes" autocomplete="off">
-                  <label class="btn btn-outline-light w-100 option" for="scale_no">no</label>
+                  <label class="btn btn-outline-light w-100 option" for="scale_yes">yes</label>
                 </div>
                 <div class="mb-3">
                   <input type="radio" class="btn-check" name="scale" id="scale_no" autocomplete="off">
@@ -93,9 +99,10 @@
                   <input type="radio" class="btn-check" name="public_access" id="public_access_yes" autocomplete="off">
                   <label class="btn btn-outline-light w-100 option" for="public_access_yes">Yes</label>
                 </div>
+                <div class="mb-3">
                 <input type="radio" class="btn-check" name="public_access" id="public_access_no" autocomplete="off">
                 <label class="btn btn-outline-light w-100 option" for="public_access_no">no</label>
-              </div>
+                </div>
 
                 <h5 class="card-title question">Q7. If your application doesn't have public access, do you require a VPN for secure access?</h5>
                 <div class="mb-3">
@@ -107,7 +114,6 @@
                   <label class="btn btn-outline-light w-100 option" for="vpn_no">No</label>
                 </div>
 
-              
                 <h5 class="card-title question">Q8. Do you prefer a container-based architecture?</h5>
                 <div class="mb-3">
                   <input type="radio" class="btn-check" name="container_based" id="container_yes" autocomplete="off">
@@ -120,7 +126,7 @@
 
                 <h5 class="card-title question">Q9. Do you need a managed database service? If yes, what type of database?</h5>
                 <div class="mb-3">
-                  <select class="form-select" name="database" id="database" required>
+                  <select class="form-select" name="managed_database" id="managed_database" required>
                     <option value="">Choose database type (if needed)</option>
                     <option value="NoSQL">NoSQL</option>
                     <option value="SQL">SQL</option>
