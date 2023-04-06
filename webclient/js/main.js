@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const cloudProvider = form.querySelector("input[name='cloud_provider']:checked").value;
     const budget = form.querySelector("#budget").value;
-     const workload = form.querySelector("#workload").value;
+    const workload = form.querySelector("#workload").value;
     const architecture = form.querySelector("#architecture").value;
     const autoScaling = form.querySelector("input[name='scale']:checked").value;
     const publicAccess = form.querySelector("input[name='public_access']:checked").value;
