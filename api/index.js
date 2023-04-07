@@ -1,25 +1,29 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const cors = require('cors');
+const generateTopologyResponse = require('./topologyResponse');
 
 const app = express();
+
+app.use(cors());
+
+app.use(
+    cors({
+      origin: 'http://localhost:3001',
+    })
+  );
+  
 app.use(bodyParser.json()); // Cambiar a json
 
-// Servir archivos estáticos si es necesario (opcional)
-app.use(express.static("public"));
-
-app.get("/home", function(req, res){
-    res.sendFile(__dirname + "/index2.html");
-});
-
-app.post("/api/data", function(req, res){
-    console.log(req.body.X);
+app.post('/api/data', function (req, res) {
     
-    res.write("var/foo");
-    res.send();
-    // En lugar de 'res.write', envíe un objeto JSON
-    res.json({
-        result: "var/foo"
-    });
+  // Call the function to generate the response based on the request body
+    const topologyResponse = generateTopologyResponse(req.body);
+
+    console.log(req.body);
+
+  // Send the generated response
+    res.json(topologyResponse);
 });
 
 app.listen(3000, function(){console.log("servers started on port 3000")});
