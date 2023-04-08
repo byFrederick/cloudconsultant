@@ -36,9 +36,15 @@ const QuestionnaireForm = () => {
       });
   
       if (response.ok) {
-        const data = await response.json();
-        console.log('Form submitted successfully', data);
-        navigate('/response');
+        const Jresp = await response.json();
+        console.log('Form submitted successfully', Jresp);
+        if (formData.cloud_provider === "No") {
+          // Redirect to the cloudchoice page and pass the response data
+          navigate('/cloudchoice', { state: { formData } });
+        } else {
+          // Redirect to the response page and pass the response data
+          navigate('/response', { state: { Jresp, formData } });
+        }
 
       } else {
         throw new Error('Failed to submit form');

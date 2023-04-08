@@ -1,13 +1,24 @@
-import React from "react";
-import Navar from "../utils/Navar";
+import React from 'react';
+import Navar from '../utils/Navar';
+import Card from './Card';
+import cardsData from './cardsData';
 
-const App = () => {
-    return(
-        <div>
-            <Navar />
-            <p className="lead mb-4">A web-based cloud architecture design tool for: AWS, Azure and GPC.</p>         
-        </div>
-    );
-}
+const CloudChoice = () => {
 
-export default App;
+  return (
+    <div> 
+    <Navar />
+    <h1>Choose Cloud Provider</h1>
+    {cardsData.map((card) => (
+        <Card
+            key={card.id}
+            provider={card.provider}
+            title={card.title}
+            description={card.description}
+        />
+    ))} 
+    </div>
+  );
+};
+
+export default CloudChoice;
